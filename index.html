@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kadek Yoga Vidya Pradnyaditha — IT Support & AI System Developer. A terminal-styled portfolio: AI Fleet Commander running 16 AI agents." />
+  <meta name="theme-color" content="#0a0e12" />
+  <title>kadek@portfolio:~$ — Kadek Yoga Vidya Pradnyaditha</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    // Progressive enhancement: swap no-js -> js as early as possible.
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="titlebar" role="banner">
+    <div class="titlebar__inner">
+      <div class="titlebar__lights" aria-hidden="true">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--amber"></span>
+        <span class="dot dot--green"></span>
+      </div>
+      <p class="titlebar__title">kadek@portfolio: ~</p>
+      <button class="titlebar__crt" type="button" id="crt-toggle" aria-pressed="false">
+        crt
+      </button>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#about" data-cmd="whoami">about</a></li>
+        <li><a class="nav__link" href="#skills" data-cmd="cat skills.txt">skills</a></li>
+        <li><a class="nav__link" href="#experience" data-cmd="ls -la ./experience">experience</a></li>
+        <li><a class="nav__link" href="#projects" data-cmd="ls -la ./projects">projects</a></li>
+        <li><a class="nav__link" href="#publications" data-cmd="cat publications.bib">publications</a></li>
+        <li><a class="nav__link" href="#fleet" data-cmd="fleet status">ai fleet</a></li>
+        <li><a class="nav__link" href="#contact" data-cmd="echo $CONTACT">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO / BOOT ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="boot-log" aria-hidden="true">
+        <div class="boot-line" data-text="[kadek@portfolio ~]$ ./boot.sh" data-kind="cmd"></div>
+        <div class="boot-line" data-text="Loading kernel modules ................... [ OK ]"></div>
+        <div class="boot-line" data-text="Mounting /home/kadek ..................... [ OK ]"></div>
+        <div class="boot-line" data-text="Checking network interfaces .............. [ UP ]"></div>
+        <div class="boot-line" data-text="Initializing AI fleet .................... [ 16 agents ready ]"></div>
+        <div class="boot-line" data-text="Starting user session ..................... [ OK ]"></div>
+      </div>
+
+      <h1 class="hero__name" id="hero-heading">Kadek Yoga Vidya&nbsp;Pradnyaditha</h1>
+      <p class="hero__role">IT Support &amp; AI System Developer <span class="dim">— Bali, Indonesia</span></p>
+
+      <p class="hero__whoami">
+        <span class="prompt" aria-hidden="true">$</span>
+        <span class="cmd" aria-hidden="true">whoami</span>
+        <span class="hero__answer">&gt; systems thinker · problem solver · AI Fleet Commander</span>
+      </p>
+
+      <div class="hero__cta">
+        <a class="cta cta--primary" href="#about"><span aria-hidden="true">$</span> ./explore</a>
+        <a class="cta cta--secondary" href="#contact"><span aria-hidden="true">$</span> ssh contact</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <h2 class="section__heading" id="about-heading">
+        <span class="cmd-prompt" aria-hidden="true" data-text="$ whoami"><span class="prompt">$</span> <span class="cmd">whoami</span></span>
+        <span class="sr-only">About</span>
+      </h2>
+
+      <div class="output">
+        <div class="about-grid">
+          <figure class="about__photo">
+            <img src="assets/profile-photo.jpg" width="220" height="330"
+                 alt="Kadek Yoga Vidya Pradnyaditha in graduation regalia, seated on campus steps — Cum Laude, Udayana University" />
+            <figcaption class="badge badge--gold" aria-hidden="true">CUM LAUDE · 2024</figcaption>
+          </figure>
+
+          <div class="about__text">
+            <p class="lead">Kadek Yoga Vidya Pradnyaditha — IT Support &amp; AI System Developer based in Bali, Indonesia. I keep hospital infrastructure alive by day, and command fleets of AI agents that build real products by night.</p>
+
+            <div class="block">
+              <p class="block__label"><span aria-hidden="true">$</span> cat education.txt</p>
+              <ul class="plain-list">
+                <li><span class="tag">[2020–2024]</span> B.Sc. Computer Science — Udayana University</li>
+                <li class="indent">GPA 3.90 / 4.00 · Cum Laude</li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <p class="block__label"><span aria-hidden="true">$</span> cat certifications.txt</p>
+              <ul class="plain-list">
+                <li><span class="ok">[✓]</span> Cisco Networking Essentials</li>
+                <li><span class="ok">[✓]</span> IBM SkillsBuild — Data Classification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <h2 class="section__heading" id="skills-heading">
+        <span class="cmd-prompt" aria-hidden="true" data-text="$ cat skills.txt"><span class="prompt">$</span> <span class="cmd">cat skills.txt</span></span>
+        <span class="sr-only">Skills</span>
+      </h2>
+
+      <div class="output">
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h3 class="skill-group__title">core</h3>
+            <ul class="plain-list">
+              <li>network management</li>
+              <li>IT support &amp; troubleshooting</li>
+              <li>server virtualization</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">design</h3>
+            <ul class="plain-list">
+              <li>UI/UX design</li>
+              <li>prototyping</li>
+              <li>design systems</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">iot / hardware</h3>
+            <ul class="plain-list">
+              <li>wireless sensor networks</li>
+              <li>ESP8266</li>
+              <li>embedded systems</li>
+            </ul>
+          </div>
+          <div class="skill-group skill-group--ai">
+            <h3 class="skill-group__title skill-group__title--ai">ai — fleet-grade</h3>
+            <ul class="plain-list">
+              <li>LLM orchestration</li>
+              <li>multi-agent systems</li>
+              <li>AI agent development</li>
+              <li>prompt engineering</li>
+              <li>agent tooling &amp; evaluation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <h2 class="section__heading" id="experience-heading">
+        <span class="cmd-prompt" aria-hidden="true" data-text="$ ls -la ./experience"><span class="prompt">$</span> <span class="cmd">ls -la ./experience</span></span>
+        <span class="sr-only">Experience</span>
+      </h2>
+
+      <div class="output">
+        <ol class="timeline">
+          <li class="job">
+            <h3 class="job__title">IT Support &amp; AI System Developer</h3>
+            <p class="job__meta">Rumah Sakit Haji Boejasin, Bali <span class="job__date">Jun 2025 — present</span></p>
+            <ul class="plain-list bullet">
+              <li>Maintain hospital network, servers, and end-user systems.</li>
+              <li>Build and deploy AI tools to automate IT operations and workflows.</li>
+            </ul>
+          </li>
+          <li class="job">
+            <h3 class="job__title">IT Support Technician</h3>
+            <p class="job__meta">Sekolah HighScope Indonesia–Bali <span class="job__date">Oct 2024 — Mar 2025</span></p>
+            <ul class="plain-list bullet">
+              <li>End-user support, device provisioning, and network upkeep for a K–12 campus.</li>
+            </ul>
+          </li>
+          <li class="job">
+            <h3 class="job__title">UI/UX Designer</h3>
+            <p class="job__meta">Yayasan Hasnur Centre</p>
+            <ul class="plain-list bullet">
+              <li>Designed interfaces and prototypes for web platforms.</li>
+            </ul>
+          </li>
+          <li class="job">
+            <h3 class="job__title">IT Support Technician</h3>
+            <p class="job__meta">RS Bali Mandara <span class="job__date">Feb 2023 — Apr 2023</span></p>
+            <ul class="plain-list bullet">
+              <li>On-site IT support in a hospital environment; troubleshooting and maintenance.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <h2 class="section__heading" id="projects-heading">
+        <span class="cmd-prompt" aria-hidden="true" data-text="$ ls -la ./projects"><span class="prompt">$</span> <span class="cmd">ls -la ./projects</span></span>
+        <span class="sr-only">Projects</span>
+      </h2>
+
+      <div class="output">
+        <ul class="projects plain-list">
+          <li class="project">
+            <span class="tag tag--web">[web]</span>
+            <span class="project__name">Hospital Inventory System</span>
+            <p class="project__desc">JELIKU-published · full-stack web inventory for hospital assets.</p>
+          </li>
+          <li class="project">
+            <span class="tag tag--iot">[iot]</span>
+            <span class="project__name">Smart Home WSN</span>
+            <p class="project__desc">Wireless sensor network for home automation.</p>
+          </li>
+          <li class="project">
+            <span class="tag tag--iot">[iot]</span>
+            <span class="project__name">Student Monitoring (ESP8266)</span>
+            <p class="project__desc">Classroom / student monitoring with ESP8266 nodes.</p>
+          </li>
+          <li class="project">
+            <span class="tag tag--ai">[ai]</span>
+            <span class="project__name">AI Fleet (Hermes × 16 agents)</span>
+            <p class="project__desc">Kanban-orchestrated multi-agent system on a VPS.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <h2 class="section__heading" id="publications-heading">
+        <span class="cmd-prompt" aria-hidden="true" data-text="$ cat publications.bib"><span class="prompt">$</span> <span class="cmd">cat publications.bib</span></span>
+        <span class="sr-only">Publications</span>
+      </h2>
+
+      <div class="output">
+        <div class="bib">
+          <article class="bib__entry">
+            <p class="bib__title">“Smart Home Wireless Sensor Network”</p>
+            <p class="bib__journal">JELIKU — Jurnal Elektronik Ilmu Komputer, Universitas Udayana</p>
+          </article>
+          <article class="bib__entry">
+            <p class="bib__title">“Student Monitoring System using ESP8266”</p>
+            <p class="bib__journal">JELIKU — Jurnal Elektronik Ilmu Komputer, Universitas Udayana</p>
+          </article>
+          <article class="bib__entry">
+            <p class="bib__title">“Web-based Hospital Inventory System”</p>
+            <p class="bib__journal">JELIKU — Jurnal Elektronik Ilmu Komputer, Universitas Udayana</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI FLEET ============ -->
+    <section class="section" id="fleet" aria-labelledby="fleet-heading">
+      <h2 class="section__heading" id="fleet-heading">
+        <span class="cmd-prompt" aria-hidden="true" data-text="$ fleet status"><span class="prompt">$</span> <span class="cmd">fleet status</span></span>
+        <span class="sr-only">AI Fleet</span>
+      </h2>
+
+      <div class="output">
+        <p class="lead">Running <strong>16 AI agents</strong> on a VPS, coordinated over a kanban board. Frontend, backend, security, healthcare, finance — each a specialist profile. I write the briefs; the fleet ships the build.</p>
+
+        <div class="fleet-table" role="table" aria-label="AI fleet — 16 agents and their roles">
+          <div class="fleet-row fleet-row--head" role="row" aria-hidden="true">
+            <span role="columnheader">NAME</span>
+            <span role="columnheader">ROLE</span>
+            <span role="columnheader">STATUS</span>
+          </div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">frontend</span><span role="cell">builds UI &amp; components</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">backend</span><span role="cell">APIs, services, data flows</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">security</span><span role="cell">audits &amp; hardening</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">ui-ux</span><span role="cell">design systems &amp; prototypes</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">testing</span><span role="cell">QA, test automation</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">healthcare</span><span role="cell">hospital domain (HL7, HIS)</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">finance</span><span role="cell">budgeting &amp; ops reporting</span><span role="cell"><span class="status status--idle">● idle</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">devops</span><span role="cell">CI/CD &amp; infrastructure</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">data-analyst</span><span role="cell">dashboards &amp; reports</span><span role="cell"><span class="status status--idle">● idle</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">research</span><span role="cell">literature &amp; recon</span><span role="cell"><span class="status status--idle">● idle</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">code-review</span><span role="cell">PR &amp; quality gates</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">docs</span><span role="cell">documentation &amp; runbooks</span><span role="cell"><span class="status status--idle">● idle</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">sql-engineer</span><span role="cell">database design &amp; queries</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">translator</span><span role="cell">Bahasa ↔ English localization</span><span role="cell"><span class="status status--idle">● idle</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">infra</span><span role="cell">server &amp; virtualization</span><span role="cell"><span class="status status--on">● online</span></span></div>
+          <div class="fleet-row" role="row"><span role="cell" class="fleet-name">commander</span><span role="cell">kanban orchestration (me)</span><span role="cell"><span class="status status--always">● always-on</span></span></div>
+        </div>
+
+        <p class="fleet-footer">16 agents · 1 commander · zero micromanagement</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <h2 class="section__heading" id="contact-heading">
+        <span class="cmd-prompt" aria-hidden="true" data-text="$ echo $CONTACT"><span class="prompt">$</span> <span class="cmd">echo $CONTACT</span></span>
+        <span class="sr-only">Contact</span>
+      </h2>
+
+      <div class="output">
+        <ul class="contact plain-list">
+          <li><span class="contact__key">LinkedIn</span> <a href="https://linkedin.com/in/kadekyogavidyapradnyaditha" target="_blank" rel="noopener noreferrer">linkedin.com/in/kadekyogavidyapradnyaditha</a></li>
+          <li><span class="contact__key">Email</span> <a href="mailto:vidyayoga7@gmail.com">vidyayoga7@gmail.com</a></li>
+          <li><span class="contact__key">Location</span> <span>Bali, Indonesia</span></li>
+        </ul>
+
+        <p class="exit-line"><span class="prompt" aria-hidden="true">$</span> <span class="cmd" aria-hidden="true">exit</span><span class="dim">&gt; Thanks for the visit. Session closed.</span> <span class="cursor" aria-hidden="true">▮</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ COMMAND BAR ============ -->
+  <footer class="command-bar" role="contentinfo">
+    <form class="command-bar__form" id="command-form" autocomplete="off">
+      <label class="sr-only" for="command-input">Type a command</label>
+      <span class="prompt" aria-hidden="true">kadek@portfolio:~$</span>
+      <input class="command-bar__input" id="command-input" type="text" spellcheck="false"
+             placeholder='type "help"' aria-label="Type a command (try help, whoami, ls, cat, clear, contact)" />
+    </form>
+    <div class="command-bar__output" id="command-output" aria-live="polite"></div>
+  </footer>
+
+  <script src="js/fleet.js"></script>
+  <script src="js/commands.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
